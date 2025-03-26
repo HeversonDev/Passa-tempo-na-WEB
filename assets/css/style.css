@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.default-container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0px 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3928CF;
+    height: 200px;
+}
+
+header img {
+    width: 6.875rem;
+}
+
+#contact-links-header {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-family: "Boldonse";
+    font-size: 1rem;
+}
+
+#contact-links-header a {
+    text-decoration: none;
+    color: #3928CF;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    transition: all linear 0.2s;
+}
+
+#contact-links-header a:hover {
+    box-shadow: 1px 1px 20px white;
+}
+
+.container-hero {
+    display: flex;
+    background-color: #5685ED;
+}
+
+#left-hero {
+    flex: 1;
+    padding: 50px 30px;
+    padding-top: 95px;
+}
+
+#left-hero h1 {
+    font-size: 4.688rem;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    font-family: "Boldonse";
+    color: #012541;
+}
+
+
+.h1crooked {
+    margin-left: 380px;
+    position: absolute;
+}
+
+#right-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+#right-hero img {
+    width: 300px;
+}
+
+#left-hero p {
+    margin-top: 158px;
+}
+
+#left-hero p, #right-hero p {
+    font-size: 1.563rem;
+    text-align: justify;
+    color: white;
+}
+
+.project-area {
+    display: flex;
+    justify-content: center;
+    background-color: #5685ED;
+    padding: 50px 20px;
+    border-top: black 2px solid;
+}
+
+.centralizar {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #BED4E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 315px;
+    padding: 20px 20px;
+    border-radius: 30px;
+    border: solid 2px black;
+}
+
+.project-card h2 {
+    font-size: 1.563rem;
+}
+
+.project-card img {
+    width: auto;
+    height: 6.875rem;
+
+}
+
+.project-card p {
+    font-size: 1rem;
+}
+
+.project-card button {
+    font-size: 1rem;
+    background-color: #F56419;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 30px;
+}
