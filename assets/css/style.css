@@ -67,10 +67,6 @@ header img {
 }
 
 
-.h1crooked {
-    margin-left: 380px;
-    position: absolute;
-}
 
 #right-hero {
     flex: 1;
@@ -85,7 +81,7 @@ header img {
 }
 
 #left-hero p {
-    margin-top: 158px;
+    margin-top: 32px;
 }
 
 #left-hero p, #right-hero p {
@@ -142,4 +138,49 @@ header img {
     padding: 10px 35px;
     border: none;
     border-radius: 30px;
+}
+
+footer{
+    background-color: #282828;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.icons-area nav {
+    display: flex;
+    gap: 30px;
+} 
+
+.icons-area nav img {
+    width: 80px;
+    transition: all linear 0.2s;
+}
+
+.icons-area nav img:hover {
+    width: 88px;
+}
+
+.information-footer {
+    font-size: 1.75rem;
+    color: white;
+    text-align: center;
+}
+
+.information-footer span {
+    font-size: 2.188rem;
+    color: #989898;
+}
+
+.information-footer a {
+    color: white;
+    transition: all linear 0.2s;
+}
+
+.information-footer a:hover {
+    font-size: 2rem;
 }
