@@ -345,6 +345,7 @@ footer{
 
     #contact-links-header {
         flex-direction: column;
+        display: none;
     }
 
 
@@ -419,6 +420,7 @@ footer{
 
     #contact-links-header {
         flex-direction: column;
+        display: none;
     }
 
 
@@ -492,6 +494,7 @@ footer{
 
     #contact-links-header {
         flex-direction: column;
+        display: none;
     }
 
 
