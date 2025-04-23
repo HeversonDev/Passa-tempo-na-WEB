@@ -138,6 +138,12 @@ header img {
     padding: 10px 35px;
     border: none;
     border-radius: 30px;
+    transition: all linear 0.2s;
+}
+
+.project-card button:hover {
+    padding: 12px 40px;
+    box-shadow: 0px 0px 20px white;
 }
 
 footer{
