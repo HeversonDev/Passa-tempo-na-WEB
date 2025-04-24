@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    background-color: #5C5C5C;
+    color: white;
+    font-family: "Aldrich", Arial, Helvetica, sans-serif;
+}
+
+.default-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0;
+    border: 0;
+}
+
+#clock-counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.clock-counter p{
+    font-size: 11.25rem;
+    margin: 0;
+    background-color: #0137A3;
+    padding: 80px 45px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.separate-points p{
+    font-size: 11.25rem;
+    margin: 0;
+}
+
+.action-buttons img{
+    width: 90px;
+    padding: 20px 20px;
+    transition: all linear 0.1s;
+}
+
+.action-buttons img:hover {
+    width: 100px;
+    background-color: #666666;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px white;
+}
+
+#alert-icon-off{
+   display: none;
+}
+
