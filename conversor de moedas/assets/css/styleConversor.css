@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: white;
+}
+
+
+.default-container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conainer-converter {
+    font-size: 1.875rem;
+}
+
+
+#currency-selectors {
+
+}
+
+#coin-one {
+
+}
+
+#coin-two {
+
+}
+
+#coin-one, #coin-two{
+    font-size: 1.25rem;
+}
+
+#conversion-value {
+
+}
+
+#conversion-response {
+
+}
