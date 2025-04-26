@@ -25,7 +25,9 @@ body {
 
 
 #currency-selectors {
-
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
 }
 
 #coin-one {
@@ -41,9 +43,9 @@ body {
 }
 
 #conversion-value {
-
+    font-size: 1.25rem;
 }
 
 #conversion-response {
-
+    
 }
