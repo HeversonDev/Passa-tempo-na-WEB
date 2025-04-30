@@ -25,81 +25,87 @@ function initiatingRequestBTT(){
 
 
 async function requestOperation(one, two, value){
-    console.log(one, two, value)
 
-    let request = await fetch(`http://api.exchangerate.host/convert?access_key=0cb1a5a7b2eab1d874e8b9d322383403&from=${one}&to=${two}&amount=${value}`)
-    let convertRequest = await request.json()
+    try{
+        console.log(one, two, value)
 
-    let valueResponse = convertRequest.result
-    let valueResponseFormat = valueResponse.toFixed(2)
+        let request = await fetch(`http://api.exchangerate.host/convert?access_key=0cb1a5a7b2eab1d874e8b9d322383403&from=${one}&to=${two}&amount=${value}`)
+        let convertRequest = await request.json()
 
-        switch (one) {
-            case "USD" :
-                one = `DÓLAR AMERICANO`
-                break
-            case "BRL" :
-                one = `REAL BRASILEIRO`
-                break
-            case "EUR" :
-                one = `EURO`
-                break
-            case "JPY" :
-                one = `IENE JAPONÊS`
-                break
-            case "GBP" :
-                one = `LIBRA ESTERLINA`
-                break
-            case "CNY" :
-                one = `YUAN CHINÊS (RENMINBI)`
-                break
-            case "CHF" :
-                one = `FRANCO SUÍÇO`
-                break
-            case "CAD" :
-                one = `DÓLAR CANADENSE`
-                break
-            case "AUD" :
-                one = `DÓLAR AUSTRALIANO`
-                break
-            case "HKD" :
-                one = `DÓLAR DE HONG KONG`
-                break
-        }
+        let valueResponse = convertRequest.result
+        let valueResponseFormat = valueResponse.toFixed(2)
 
-        switch (two) {
-            case "USD" :
-                two = `DÓLAR AMERICANO`
-                break
-            case "BRL" :
-                two = `REAL BRASILEIRO`
-                break
-            case "EUR" :
-                two = `EURO`
-                break
-            case "JPY" :
-                two = `IENE JAPONÊS`
-                break
-            case "GBP" :
-                two = `LIBRA ESTERLINA`
-                break
-            case "CNY" :
-                two = `YUAN CHINÊS (RENMINBI)`
-                break
-            case "CHF" :
-                two = `FRANCO SUÍÇO`
-                break
-            case "CAD" :
-                two = `DÓLAR CANADENSE`
-                break
-            case "AUD" :
-                two = `DÓLAR AUSTRALIANO`
-                break
-            case "HKD" :
-                two = `DÓLAR DE HONG KONG`
-                break
-        }
+            switch (one) {
+                case "USD" :
+                    one = `DÓLAR AMERICANO`
+                    break
+                case "BRL" :
+                    one = `REAL BRASILEIRO`
+                    break
+                case "EUR" :
+                    one = `EURO`
+                    break
+                case "JPY" :
+                    one = `IENE JAPONÊS`
+                    break
+                case "GBP" :
+                    one = `LIBRA ESTERLINA`
+                    break
+                case "CNY" :
+                    one = `YUAN CHINÊS (RENMINBI)`
+                    break
+                case "CHF" :
+                    one = `FRANCO SUÍÇO`
+                    break
+                case "CAD" :
+                    one = `DÓLAR CANADENSE`
+                    break
+                case "AUD" :
+                    one = `DÓLAR AUSTRALIANO`
+                    break
+                case "HKD" :
+                    one = `DÓLAR DE HONG KONG`
+                    break
+            }
 
-    
-    conversionResponse.innerHTML = `<p>Resposta da conversão: ${value} em ${one} são ${valueResponseFormat} em ${two} </p>`
+            switch (two) {
+                case "USD" :
+                    two = `DÓLAR AMERICANO`
+                    break
+                case "BRL" :
+                    two = `REAL BRASILEIRO`
+                    break
+                case "EUR" :
+                    two = `EURO`
+                    break
+                case "JPY" :
+                    two = `IENE JAPONÊS`
+                    break
+                case "GBP" :
+                    two = `LIBRA ESTERLINA`
+                    break
+                case "CNY" :
+                    two = `YUAN CHINÊS (RENMINBI)`
+                    break
+                case "CHF" :
+                    two = `FRANCO SUÍÇO`
+                    break
+                case "CAD" :
+                    two = `DÓLAR CANADENSE`
+                    break
+                case "AUD" :
+                    two = `DÓLAR AUSTRALIANO`
+                    break
+                case "HKD" :
+                    two = `DÓLAR DE HONG KONG`
+                    break
+            }
+
+        
+        conversionResponse.innerHTML = `<p>Resposta da conversão: ${value} em ${one} são <span>${valueResponseFormat}</span> em ${two} </p>`
+
+    }catch(error){
+        conversionResponse.innerHTML = `Ocorreu um erro inesperado, por favor tente mais tarde.`
+    }
 
 }

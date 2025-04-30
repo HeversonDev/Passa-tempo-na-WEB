@@ -8,6 +8,7 @@ body {
     justify-content: center;
     background-color: #212121;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -52,4 +53,121 @@ body {
 
 #conversion-response {
     
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* responsividade */
+
+
+/* 100px    1300px*/
+
+@media(min-width: 796px) and (max-width: 1300px) {
+    #conversion-response {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+
+/*600px   795px*/
+
+@media(min-width: 600px) and (max-width: 795px) {
+
+    #conainer-converter {
+        font-size: 1.25rem;
+    }
+
+    #conversion-response {
+        font-size: 1.25rem;
+    }
+
+    #coin-one, #coin-two {
+        font-size: 0.938rem;
+    }
+
+    #conversion-value {
+        font-size: 0.938rem;
+    }
+
+    #convert-currency-button {
+        font-size: 0.938rem;
+    }
+
+}
+
+
+
+/*430px   600px*/
+
+@media(min-width: 430px) and (max-width: 599px) {
+
+    #conainer-converter {
+        font-size: 1.25rem;
+    }
+
+    #conversion-response {
+        font-size: 1.25rem;
+    }
+
+    #coin-one, #coin-two {
+        font-size: 0.938rem;
+    }
+
+    #conversion-value {
+        font-size: 0.938rem;
+    }
+
+    #convert-currency-button {
+        font-size: 0.938rem;
+    }
+
+    #currency-selectors {
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+/*295px   430px*/
+
+@media(min-width: 295px) and (max-width: 429px) {
+
+    #conainer-converter {
+        font-size: 1.25rem;
+    }
+
+    #conversion-response {
+        font-size: 1.25rem;
+    }
+
+    #coin-one, #coin-two {
+        font-size: 0.938rem;
+    }
+
+    #conversion-value {
+        font-size: 0.938rem;
+    }
+
+    #convert-currency-button {
+        font-size: 0.938rem;
+    }
+
+    #currency-selectors {
+        flex-direction: column;
+    }
+
+    .default-container h1 {
+        font-size: 1.25rem;
+    }
+
 }
