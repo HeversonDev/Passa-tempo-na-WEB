@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3E3E3E;
+    color: white;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.default-container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.clock-area {
+    display: flex;
+    justify-content: center;
+    font-size: 13.75rem;
+    font-family: "Squada One", Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px black;
+}
+
+.seconds {
+    font-size: 4.063rem;
+    align-self: flex-end;
+    margin-left: 25px;
+    margin-bottom: 35px;
+}
+
+.select-time-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 185px;
+}
+
+.select-time-zone select {
+    font-size: 1.25rem;
+}
+
+.select-time-zone button {
+    font-size: 1.688rem;
+    border: none;
+    background-color: #747474;
+    color: white;
+    transition: all linear 0.2s;
+}
+
+.select-time-zone button:hover {
+    box-shadow: 0px 0px 30px white;
+}
+
+
+
+/* flexibilidade */
+
+
+/* 460px     655px */
+
+@media(min-width: 460px) and (max-width: 655px){
+
+    .clock-area {
+        font-size: 8.125rem;
+    }
+
+    .seconds {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .select-time-zone h1 {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+
+
+
+
+
+/* 300px     460px */
+
+@media(min-width: 300px) and (max-width: 459px){
+
+    .clock-area {
+        font-size: 5.313rem;
+    }
+
+    .seconds {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .select-time-zone h1 {
+        font-size: 1.25rem;
+    }
+
+}
