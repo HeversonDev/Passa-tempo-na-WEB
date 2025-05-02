@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E3E3E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.default-container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.selection-area {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    margin-top: 40px;
+}
+
+.selection-area img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.selection-area a {
+    text-decoration: none;
+    color: white;
+}
+
+.selection-area h2 {
+    font-size: 2.813rem;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 85px;
+    margin-left: 20px;
+}
+
+.clocks {
+    padding: 20px 20px;
+    box-shadow: 0px 0px 45px black;
+    transition: all linear 0.1s;
+}
+
+.clocks:hover {
+    box-shadow: 0px 0px 45px white;
+}
+
+
+
+
+
+
+/* 800px    1019px*/
+
+@media(min-width: 800px) and (max-width: 1019px){
+
+    .selection-area img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .selection-area h2 {
+        font-size: 1.563rem;
+    }
+
+}
+
+
+
+
+
+
+/*  600px   800px*/
+
+@media(min-width: 600px) and (max-width: 799px){
+
+    
+
+    .selection-area img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .selection-area h2 {
+        font-size: 1.563rem;
+    }
+
+    .selection-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 0.75rem;
+    }
+
+    .title img {
+        width: 50px;
+    }
+
+}
+
+
+
+
+
+/*400px     600px*/
+
+@media(min-width: 200px) and (max-width: 599px){
+
+    
+
+    .selection-area img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .selection-area h2 {
+        font-size: 1.563rem;
+    }
+
+    .selection-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 0.5rem;
+    }
+
+    .title img {
+        width: 50px;
+    }
+
+}
